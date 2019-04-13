@@ -12,7 +12,8 @@ app.intent('My First Intent', conv =>{
 }); 
 
 app.intent('Default Fallback Intent', conv =>{
-	conv.ask("Uh-Oh's"); 
+	conv.ask("I didn't get that"); 
+	conv.ask("I'm sorry, can you try again?"); 
 }); 
   
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest(app); 
