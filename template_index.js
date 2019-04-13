@@ -12,7 +12,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   console.log('Dialogflow Request body: ' + JSON.stringify(request.body));
  
   function welcome(agent) {
-    agent.add(`Welcome to Hello Jonny!`);
+    agent.add(`Hello World`);
   }
  
   function fallback(agent) {
@@ -20,14 +20,14 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     agent.add(`I'm sorry, can you try again?`);
   }
   
-  function hello(agent){
+  function firstIntent(agent){
   	agent.add('hi hi hi'); 	
   }
 
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
-  intentMap.set('HelloIntent', hello); 
+  intentMap.set('My First Intent', firstIntent); 
   
   agent.handleRequest(intentMap);
 });
