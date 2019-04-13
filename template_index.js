@@ -21,7 +21,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   }
   
   function firstIntent(agent){
-  	agent.add('hi hi hi'); 	
+  	agent.add('This is my very first intent'); 	
   }
 
   let intentMap = new Map();
