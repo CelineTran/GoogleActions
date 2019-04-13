@@ -4,11 +4,11 @@ const {dialogflow} = require('actions-on-google');
 const app = dialogflow(); 
 
 app.intent('Default Welcome Intent', conv =>{
-	conv.ask("Why yello Jonny!"); 
+	conv.ask("Hello World"); 
 });
 
-app.intent('Hello Intent', conv =>{
-	conv.ask("yellow yellow!"); 
+app.intent('My First Intent', conv =>{
+	conv.ask("This is my very first intent"); 
 }); 
 
 app.intent('Default Fallback Intent', conv =>{
