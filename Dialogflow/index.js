@@ -8,7 +8,8 @@ app.intent('Default Welcome Intent', conv =>{
 });
 
 app.intent('My First Intent', conv =>{
-	conv.ask("This is my very first intent"); 
+	var speechOutput = "This is my very first intent"; 
+	conv.ask(speechOutput); 
 }); 
 
 app.intent('Default Fallback Intent', conv =>{
