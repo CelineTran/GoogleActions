@@ -23,7 +23,7 @@ app.intent('Color Intent', (conv, {Color}) => {
 app.intent('Animal Intent', (conv, {Animal}) => {
   	var userAnimal = Animal; 
   	var speechOutput = "Yikes I don't really like " + userAnimal; 
-	  conv.ask(speechOutput); 
+	conv.close(speechOutput); 
 }); 
 
 app.intent('Default Fallback Intent', conv =>{
