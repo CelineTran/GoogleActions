@@ -3,7 +3,7 @@
   1. Download the .zip file in this folder
 
   2. Create a new Action and call it "Debug-Trivia"
-      - Invocation can be "Debug Trivia <YourName>" 
+      - Invocation can be "Debug Trivia YOURNAME" 
   
   3. Add your first action so that it prompts you to DialogFlow
   4. Create your agent and name it "Debug-Trivia" 
